@@ -24,5 +24,5 @@
   const reveal = new IntersectionObserver(entries => entries.forEach(entry => {
     if (entry.isIntersecting) { entry.target.classList.add('is-visible'); reveal.unobserve(entry.target); }
   }), { threshold: .12 });
-  document.querySelectorAll('.section, .project-card, .skill-panel').forEach(el => { el.classList.add('reveal'); reveal.observe(el); });
+  document.querySelectorAll('.section, .project-card, .skill-panel, .journey-card').forEach(el => { el.classList.add('reveal'); reveal.observe(el); });
 })();
